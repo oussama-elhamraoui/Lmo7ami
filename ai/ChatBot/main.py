@@ -1,7 +1,16 @@
 from utils import *
+from dotenv import load_dotenv
+import os
 
+pdf_dir = "data/pdf"
+files = [os.path.join(pdf_dir, file) for file in os.listdir(pdf_dir)]
 
-bo_path = "data/pdf/bo-2022.pdf"
-text = extract_text_from_pdf(bo_path)
+text = get_pdf_text(files)
 
-print("Text:", text)
+chunks = get_text_chunks(text)
+
+# print("Text:", text)
+for i, chunk in enumerate(chunks):
+    print(f"\n\nChunk {i}", chunk)
+
+print("Chunks: ", len(chunks))
