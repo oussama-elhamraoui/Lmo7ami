@@ -1,12 +1,11 @@
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
+from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
-from langchain.chat_models import ChatOpenAI
+from langchain_openai.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
-
 
 
 def get_pdf_text(pdf_docs: list[str]):
@@ -21,7 +20,7 @@ def get_pdf_text(pdf_docs: list[str]):
 def get_text_chunks(text: str) -> list[str]:
 
     text_splitter = CharacterTextSplitter(
-        separator="\n", #! we need to find better separator
+        separator=";", #! we need to find better separator
         chunk_size=1000,
         chunk_overlap=200,
         length_function=len
