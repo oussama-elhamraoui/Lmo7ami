@@ -16,3 +16,6 @@ chunks = get_text_chunks(text)
 print("Chunks: ", len(chunks))
 
 vectorstore = get_vectorstore(chunks)
+
+
+print(vectorstore)
