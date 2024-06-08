@@ -5,3 +5,7 @@ langchain
 openai
 langchain-community
 python-dotenv
+InstructorEmbedding
+chromadb
+pypdf
+faiss-cpu
