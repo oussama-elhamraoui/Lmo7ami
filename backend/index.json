@@ -1,0 +1,20 @@
+{
+    "user_message": {
+        "id": 15,
+        "conversation": 2,
+        "sender": {
+            "id": 1,
+            "username": "newuser",
+            "email": "newuser@example.com"
+        },
+        "content": "what can I do legally if my dad hit me in Morocco",
+        "timestamp": "2024-06-10T12:38:35.452246Z"
+    },
+    "gpt_response": {
+        "id": 16,
+        "conversation": 2,
+        "sender": null,
+        "content": "In Morocco, if a parent physically abuses their child, legal actions that can be taken include notifying the public prosecutor of the harm the child is exposed to, so they can take necessary measures to protect the child's rights, including potentially seeking the removal of custody rights from the abusive parent. Additionally, if the abuse is severe, the court may intervene to ensure the child's safety and well-being.",
+        "timestamp": "2024-06-10T12:38:41.976398Z"
+    }
+}

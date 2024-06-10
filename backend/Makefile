@@ -1,2 +1,6 @@
 main:
-	python3 manage.py runserver
+	python manage.py runserver
+
+migrate:
+	python manage.py makemigrations
+	python manage.py migrate
